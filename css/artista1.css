@@ -1,0 +1,227 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    
+}
+/* Estilos para el encabezado */
+header {
+    background-color: rgb(238, 153, 167); /* Cambia el color de fondo según tus preferencias */
+    color: #fff; /* Cambia el color del texto según tus preferencias */
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para el logo */
+.logo img {
+    width: 89px; /* Ajusta el ancho del logo según tus necesidades */
+    height: 50px;
+}
+
+/* Estilos para la barra de navegación */
+
+.logo{
+    height: 70px;
+    width: 70px;
+    margin-left: 3%;
+}
+
+nav {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+nav ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: 0; 
+     
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-registro{
+    
+    background-color: red;   
+    width: 150px;
+    height: 50px;    
+    margin-left:auto;
+    margin-right: 3%;
+    cursor:pointer;
+    border-radius: 10px;  
+     
+}
+
+/*menu hamburguesa*/
+
+.btn-hamburguer,
+.cerrar-menu{
+    display: none;
+
+}
+@media screen and (max-width: 700px) {
+    .btn-hamburguer,
+    .cerrar-menu
+    {
+        display: flex ;
+        height: 50px;
+        width: 70px;
+        cursor: pointer;
+        
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+        
+        
+        
+        
+    }
+
+    nav{
+        
+        opacity: 0;
+        visibility: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1 rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right:60%;
+        background-color: black;
+        
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+        height: 100%;
+        
+
+    }
+    nav.visible {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+        
+        
+        
+        
+    }
+
+    ul{
+        flex-direction: column;
+        margin-bottom: auto;
+    
+        
+        
+        
+    }
+}
+
+/*Continue aca, estilos del artista1*/ 
+h1{
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    padding: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.parrafos {
+margin: 40px 40px;
+padding: 50px;
+color: rgb(50, 8, 165);
+font-size: 20px;
+font-family: 'Sofia', 'Princesa Sofía' , Arial, sans-serif;
+text-align: justify;
+} 
+h3 {
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    padding: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.slider-frame {
+    width: 800px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    animation: slide 10s infinite alternate ease-in-out;
+}
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+}
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+.slider-frame img {
+    width: 100%;
+}
+
+@keyframes slide {
+    0%  {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left:-100% ;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left:-200% ;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300% ;}
+    95% {margin-left: -300%;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Estilos para el footer*/
+
+footer {
+    background-color: #333; /* Cambia el color de fondo  */
+    color: #fff; /* Cambia el color del texto */
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 0%;
+}
